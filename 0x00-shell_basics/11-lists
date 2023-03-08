@@ -1,2 +1,3 @@
 #!/bin/bash
-/usr/bin/ls -la . /usr/bin/ls -la .. /usr/bin/ls -la /boot
+/bin/ls -la . /bin/ls -la .. /bin/ls -la /boot | grep -v "total" | grep -v "^$" | tail -n +3
+
