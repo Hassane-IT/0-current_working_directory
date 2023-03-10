@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod $(stat -c '%a' olleh | sed 's/^0*//') hello
